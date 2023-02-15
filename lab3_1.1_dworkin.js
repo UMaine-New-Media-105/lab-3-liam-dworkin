@@ -5,26 +5,7 @@ function setup() {
 function draw() {
   background(220);
   
-  
-  if (mouseX >= 150) { 
-    fill ('red'); 
-  }
-  
-  else if (mouseY >= 150) {
-    fill ('cyan'); 
-  }
-  
-  else if (mouseIsPressed) { 
-  fill ('green'); 
-  }
-
-  if (mouseY, mouseX > 230) { 
-    translate(40,0);
-  }
-  
-  else { 
-    translate(-25,0);  
-  }
+  yeet();
   
   newFunct();
   newFunct(30,30,1.1);
@@ -45,3 +26,26 @@ function newFunct(x,y,size) {
   pop(); 
 }
 
+function yeet() {
+  
+  if (mouseX >= 150) { 
+    fill ('red'); 
+  }
+  
+  else if (mouseY >= 150) {
+    fill ('cyan'); 
+  }
+  
+  else if (mouseIsPressed) { 
+  fill ('green'); 
+  }
+
+  if (mouseY, mouseX > 230) { 
+    translate(40,-20);
+  }
+  
+  else { 
+    translate(-25,20);  
+  }
+  
+}
